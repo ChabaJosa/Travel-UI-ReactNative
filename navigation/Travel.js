@@ -7,25 +7,20 @@ const { Navigator, Screen } = createStackNavigator();
 
 export default function Travel() {
   return (
-    <Navigator headerMode="none">
+    <Navigator
+      headerMode="screen"
+      initialRouteName="List"
+      screenOptions={{
+        headerTintColor: "black",
+        headerStyle: {
+          borderBottomColor: "transparent",
+          // marginTop: 24, // Apparently margin isn't doing anything for the header style here
+          backgroundColor: "green",
+        },
+      }}
+    >
       <Screen name="List" component={List} />
       <Screen name="Article" component={Article} />
     </Navigator>
   );
 }
-
-// export default function App() {
-//   return (
-//     <NavigationContainer>
-//     <AuthStack />
-//   </NavigationContainer>
-//   );
-// }
-
-// const AppNavigator = () => (
-//   <NavigationContainer>
-//     <AuthStack />
-//   </NavigationContainer>
-// );
-
-// export default Travel;

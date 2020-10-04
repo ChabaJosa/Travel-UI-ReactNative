@@ -1,21 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+
+import Travel from "./navigation/Travel";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Travel />
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// http://localhost:19002/
+// https://www.youtube.com/watch?v=yw1D_BrMDrA&t=42s
+// Npm i react-navigation
+// Npm i  '@react-navigation/stack'
+// Npm i @react-navigation/native
+// Npm i react-native-gesture-handler
+// Npm i @react-native-community/masked-view
+// Npm i @react-navigation/bottom-tabs
+// Npm i react-native-safe-area-context
+// Npm i @react-navigation/drawer
+// Npm i react-native-reanimated
+// Npm i @react-navigation/material-bottom-tabs
+// Npm i react-native-paper
+// Npm i @react-navigation/material-top-tabs
+// Npm i react-native-tab-view
